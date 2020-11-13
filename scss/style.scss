@@ -253,26 +253,24 @@ opacity: 0.9;
     align-items: center;
     height: 100vh;
 
-
-    
-    .dark-fon{        
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    & img{
-        opacity: 0.1;
-        width: 100%;
-    }
-    }
-
-    & img{
+& img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-   
-          
-    &-intro{
+    
+.dark-fon{        
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+& img{
+    opacity: 0.1;
+    width: 100%;
+}
+}
+
+&-intro{
     max-width: 590px;
     height: 100%;
     position: absolute;
@@ -379,7 +377,6 @@ opacity: 0.9;
 
 .myImage-2{
     display: none;
-
     @media(max-width: 767px){
 display: block;
         }
