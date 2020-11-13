@@ -1,0 +1,9 @@
+@mixin font {       //Миксин
+    font-size: 28px;
+    font-weight: bold;
+    font-family: serif;
+    color: gold;
+    &:hover{
+        color: rgb(38, 173, 56);
+    }
+}

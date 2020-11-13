@@ -1,0 +1,41 @@
+// $(document).ready(function () { // инициализация jquary
+//     $('.sliderbig').slick({ // включаем слайдер
+//         arrows: true, // стрелки
+//         fade: true, // заменяется исчезанием/перелистыванием
+//         dots: true, // точки
+//         adaptiveHeight: true, // подстраивает высоту слайда под картинку (slick-track - нужн одобавить свойство align-items:flex-start)
+//         speed: 500, // скорость пролистывания слайдов
+//         easing: 'easeOutBack', // тип анимации прокрутки
+//         infinite: true, // определение бесконечной прокрутки
+//         autoplay: false, // автоматическая прокрутка слайдов
+//         autoplaySpeed: 2000, // скорость автоматического пролистывания
+//         pauseOnFocus: false, // остановить слайдер при нажатии мыши
+//         pauseOnHover: false, // остановить слайдер при наведении мыши
+//         draggable: true, // запрещает слайдить мышкой
+//         swipe: true, // запрещает свайпать на тач скрине
+//         touchTreshold: 5, // расстояния просвайпивания пальцем для переключения
+//         touchMove: false, // позволяет/запрещает плавно перелистывать при зажатой картинке 
+//         waitForAnimate: true, // перелистываем слайдер не дожидаясь окончания анимации
+//     });
+// })
+
+
+
+//---------------Меню бургер------------------
+
+document.querySelector('.burger-wrapper').onclick = togle;
+
+function togle() {
+    document.querySelector('.polosa').classList.toggle('polosa-active'); // анимация крестика
+    document.querySelector('.mob-menu').classList.toggle('active'); // выдвижение меню
+}
+
+document.querySelector('.mob-menu').onclick = togle2; // для задвижения меню по клику на него и анимация крестика
+
+function togle2() {
+    let menu = document.querySelector('.mob-menu');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active')
+    }
+    document.querySelector('.polosa').classList.toggle('polosa-active');
+}
