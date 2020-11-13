@@ -377,4 +377,16 @@ opacity: 0.9;
 
 }
 
+.myImage-2{
+    display: none;
 
+    @media(max-width: 767px){
+display: block;
+        }
+}
+
+.myImage{
+    @media(max-width: 767px){
+        display: none;
+                }
+}

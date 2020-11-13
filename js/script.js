@@ -46,14 +46,24 @@ function togle2() {
 
 
 
-//=================Переключение стартовой картинки при < 700==========================
+// =================Переключение стартовой картинки при < 700==========================
+// let screenWidth = window.screen.width
+// window.onresize = function(event) {
+  
+//     if(event.currentTarget.innerWidth > 700 || screenWidth > 700) {
+//         document.querySelector('.myImage').src="img/block-1/2.jpg";
+//     }
+    
 
-window.onresize = function(event) {
-    if(event.currentTarget.innerWidth < 700){
-        document.querySelector('.myImage').src="img/block-1/5.jpg";
-    }else{
-        document.querySelector('.myImage').src="img/block-1/2.jpg";
-    }
-};
+//     if(event.currentTarget.innerWidth < 700 || screenWidth < 375){
+//         document.querySelector('.myImage').src="img/block-1/5.jpg";
+//     }
+  
+// };
+// console.log(screenWidth);
+
+
+
+
 
 

@@ -474,3 +474,19 @@
     top: 0;
   }
 }
+
+.myImage-2 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .myImage-2 {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .myImage {
+    display: none;
+  }
+}
