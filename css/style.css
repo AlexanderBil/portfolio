@@ -442,8 +442,8 @@
   -webkit-animation: ar 1.5s infinite linear;
           animation: ar 1.5s infinite linear;
   position: relative;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 }
 
 .block-1-intro-arrow img {
