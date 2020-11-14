@@ -535,6 +535,7 @@
   width: 100px;
   height: 2px;
   margin-left: -140px;
+  background-color: #000;
 }
 
 @media (max-width: 633px) {
