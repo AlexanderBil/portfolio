@@ -11,10 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style-null.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-null.css">
 
 	<meta charset="UTF-8">
 </head>
@@ -73,8 +74,13 @@
 
 			</div>
 	   </div>
-        <a name='about' href=""></a>
+		<!-- <a name='about' href=""></a> -->
+		
+
+
+
 	   <div class="block-2">
+		   <div class="block-2-foto"><img src="img/block-2/2.png" alt=""></div>
 		   <div class="block-2-content">
 			   <div class="block-2-content-title">About me</div>
 			   <div class="block-2-content-info">
@@ -86,12 +92,120 @@
 					<div class="block-2-content-info-picture-icons">
 						<div class="block-2-content-info-picture-icons-icon"><a  href=""><img src="img/block-2/facebook.png" alt=""></a></div>
 						<div class="block-2-content-info-picture-icons-icon"><a href=""><img src="img/block-2/instagram.png" alt=""></a></div>
-						<div class="block-2-content-info-picture-icons-icon"><a href=""><img src="img/block-2/twitter.png" alt=""></a></div>
+						<div class="block-2-content-info-picture-icons-icon"><a href=""><img src="img/block-2/linkedin.png" alt=""></a></div>
 					</div>
 				   </div>
 				   <div class="block-2-content-info-text">Greetings. My name is Alexander and I am a web developer. I have been creating websites since 2020. I create a site layout using flex and grid style technologies, which allows the site to look the same on all devices. For interactivity, I use the Java script and the React framework. I am ready to create a website for you that meets all the requirements. Just contact me.    <span>Let's create!</span></div>
 			   </div>
 
+		   </div>
+	   </div>
+
+
+	   <div class="block-3">
+          <div class="block-3-content">
+			  <div class="block-3-content-title">Skills</div>
+			  <div class="block-3-content-info">
+				  <div class="block-3-content-info-item">
+					  <div class="block-3-content-info-item-picture"><img src="img/block-3/1.png" alt=""></div>
+					  <div class="block-3-content-info-item-title">FRONT-END</div>
+					  <div class="block-3-content-info-item-text">Beautiful design and interactivity is my personal aim for every project.</div>
+				  </div>
+				  <div class="block-3-content-info-item">
+					  <div class="block-3-content-info-item-picture"><img src="img/block-3/2.png" alt=""></div>
+					  <div class="block-3-content-info-item-title">Some SKILL</div>
+					  <div class="block-3-content-info-item-text">There will be future abilities that I will master and use to develop great sites.</div>
+				  </div>
+				  <div class="block-3-content-info-item">
+					  <div class="block-3-content-info-item-picture"><img src="img/block-3/3.png" alt=""></div>
+					  <div class="block-3-content-info-item-title">SQL</div>
+					  <div class="block-3-content-info-item-text">I own the language of structured queries. Modify and manage data for the best functionality of your site</div>
+				  </div>
+
+			  </div>
+		  </div>
+	   </div>
+
+	   <div class="block-4">
+		   <div class="block-4-foto"><img src="img/block-4/sl.png" alt=""></div>
+		   <div class="block-4-content">
+			   <div class="block-4-content-title">Portfolio</div>
+			<div class="image-slider swiper-container">
+				<div class="image-slider__wrapper swiper-wrapper">
+		
+
+				
+					<div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                          <a href=""><div class="image-slider__image">
+							<img src="img/slider/1.jpg" alt="">
+						</div></a>
+					</div>
+					<div data-hash="slide-2"  class="image-slider__slide swiper-slide">
+                        <a href="">	<div class="image-slider__image">
+							<img src="img/slider/2.jpg" alt="">
+						</div></a>
+					</div>
+					<div data-hash="slide-3"  class="image-slider__slide swiper-slide">
+                 <a href=""><div class="image-slider__image">
+					<img src="img/slider/3.jpg" alt="">
+				</div></a>
+					</div>
+		
+				</div>
+				<!-- Добавляем если нам нужны стрелки управления -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<a class="block-4-content-button" href=""> <span>Detail</span> </a>
+		   </div>
+	   </div>
+
+	   <div class="block-5">
+	
+		   <div class="block-5-content">
+			<div class="block-5-content-shidow"></div>
+			<img src="img/block-5/4.jpg" alt="">
+		
+			   <div class="block-5-content-form">
+				   <div class="block-5-content-form-title">To apply</div>
+
+					   <form action="">
+						<div class="form-div">
+							<label></label>
+							<input type="text" placeholder="Enter name...">
+						</div>
+						<div class="form-div">
+							<label></label>
+							<input type="text" placeholder="Enter email...">
+						</div>
+						<div class="form-div">
+							<label></label>
+							<input type="number" placeholder="Enter phone...">
+						</div>
+						<div class="form-div area">
+							<label></label>
+							<textarea></textarea>
+						</div>
+						<div class="form-div-button">
+							<button type="submit">Send</button>
+							<button type="reset">Reset</button>
+						</div>
+					   </form>
+
+			   </div>
+		   </div>
+	   </div>
+
+	   <div class="block-6">
+		   <div class="block-6-content">
+			   <div class="block-6-content-logo"><img src="img/icons/2.png" alt=""></div>
+			   <div class="block-6-content-text">Let's work together
+			  <span>I am always open to new ideas and cool projects</span></div>
+			   <div class="block-6-content-icons">
+				<a href=""><div class="block-6-content-icons-icon"><img src="img/block-6/1.png" alt=""></div></a>
+				<a href=""><div class="block-6-content-icons-icon icon_s"><img src="img/block-6/2.png" alt=""></div></a>
+				<a href=""><div class="block-6-content-icons-icon"><img src="img/block-6/3.png" alt=""></div></a>
+			   </div>
 		   </div>
 	   </div>
 
@@ -101,8 +215,7 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
