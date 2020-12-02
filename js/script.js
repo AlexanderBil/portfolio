@@ -234,6 +234,8 @@ let myImageSlider = new Swiper('.image-slider',{  // название класа
     breakpoints: {
         320: {
             slidesPerView: 1,
+           
+     
         },
         480: {
             slidesPerView: 2,
