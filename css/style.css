@@ -863,6 +863,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .block-4 {
+    background-color: #362435;
+  }
+}
+
 .block-4-content {
   margin: 20px 0px 70px 0px;
   display: -webkit-box;
@@ -958,6 +964,12 @@
   width: 100%;
   max-width: 1050px;
   margin: 0px auto 100px auto;
+}
+
+@media (max-width: 767px) {
+  .image-slider__wrapper {
+    margin: 50px 0px 0px 0px;
+  }
 }
 
 .image-slider__image img {
