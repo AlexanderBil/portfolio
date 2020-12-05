@@ -353,6 +353,7 @@ opacity: 0.9;
             padding: 14px 24px;
             background-image: linear-gradient(45deg , #81025b 60%, #017da1);
             box-shadow: 0 16px 32px 0 rgba(177, 16, 150, 0.555);
+            border: 1px solid #fff;
         }
          }
 
@@ -501,6 +502,7 @@ display: block;
              display: flex;
              flex-direction: column;
              margin: 0px 15px 0px 0px;
+             border: 1px solid rgba(128, 128, 128, 0.473);
              @media(max-width: 633px){
                 margin: 0px 8px 25px 8px;
                 }
@@ -530,7 +532,10 @@ display: block;
                height: 50px;
                background-color: rgb(54, 36, 53);
 
-
+               @media(max-width: 633px){
+                justify-content: space-between;
+                height: 45px;
+                }
 
                   & img{
                       width: 100%;
@@ -538,6 +543,11 @@ display: block;
                       object-fit: cover;
                       width: 35px;
                       height: 35px;
+
+                      @media(max-width: 633px){
+                        width: 33px;
+                        height: 33px;
+                        }
                   }
                }
             }
@@ -1022,7 +1032,7 @@ button {
     flex-direction: column;
     align-items: center;
 width: 600px;
-margin: 50px 0px 50px 0px;
+margin: 35px 0px 40px 0px;
 
 @media(max-width: 767px){
     margin: 20px 0px 20px 0px;
