@@ -1354,13 +1354,6 @@ button:first-child {
   height: 40px;
 }
 
-@media (max-width: 767px) {
-  .block-6-content-icons-icon {
-    width: 35px;
-    height: 35px;
-  }
-}
-
 .block-6-content-icons-icon:hover {
   background-color: #fff;
   border-radius: 50%;
