@@ -1343,12 +1343,6 @@ button:first-child {
           justify-content: space-between;
 }
 
-.block-6-content-icons .icon_s:hover {
-  background-color: #fff;
-  border-radius: 50%;
-  border: 0px solid #fff;
-}
-
 .block-6-content-icons-icon {
   width: 40px;
   height: 40px;
