@@ -112,7 +112,7 @@
   background-color: #000;
   left: 0;
   top: -60px;
-  left: -110%;
+  left: -120%;
   overflow: auto;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -150,8 +150,8 @@
 
 .mob-menu-content li {
   margin: 0px 0px 15px 0px;
-  -webkit-transform: translate(-200%, 0px);
-          transform: translate(-200%, 0px);
+  -webkit-transform: translate(-300%, 0px);
+          transform: translate(-300%, 0px);
 }
 
 .mob-menu-content a {

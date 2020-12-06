@@ -92,7 +92,7 @@
     background-color: #000;
     left: 0;
     top: -60px;
-    left: -110%;
+    left: -120%;
     overflow: auto;
     transition: all 0.5s ease;
 
@@ -117,7 +117,7 @@ opacity: 0.9;
 
     & li{
         margin: 0px 0px 15px 0px;
-        transform: translate(-200%, 0px);
+        transform: translate(-300%, 0px);
 
     }
 
