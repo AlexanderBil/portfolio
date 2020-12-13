@@ -23,24 +23,38 @@ function togle2() {
 }
 
 
+//==========================Форма================================
+
+document.querySelector('.button-sub').onclick = valid;
 
 
-// =================Переключение зависимо от ширины==========================
+function valid(form) {
+    form = document.getElementById('formstart'); // указуем id формы
 
-// let screenWidth = window.screen.width
-// window.onresize = function(event) {
-  
-//     if(event.currentTarget.innerWidth > 700 || screenWidth > 700) {
-//         document.querySelector('.myImage').src="img/block-1/2.jpg";
-//     }
-    
+    let fail = false; // Переменная куда заносим ошибку, если она есть
+    let name = form.name.value;
+    let email = form.email.value;
+    let phone = form.phone.value;
+    let regMail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; //Регулярное выражение для проверки Email
 
-//     if(event.currentTarget.innerWidth < 700 || screenWidth < 375){
-//         document.querySelector('.myImage').src="img/block-1/5.jpg";
-//     }
-  
-// };
-// console.log(screenWidth);
+    if (name == '' || name == ' ')
+        fail = 'Enter your name';
+
+    else if (regMail.test(email) == false)
+        fail = 'Enter email'
+
+    else if (phone == '')
+        fail = 'Enter phone';
+
+        if (fail)
+        alert(fail); //Если переменная true выводим сообщение про ошибку.
+
+
+    else
+        window.location = "http://google.com"; // Если все правильно, то перенаправляем пользователя на новую страницу
+
+}
+
 
 
 //=================================Слайдер=====================================
