@@ -802,15 +802,17 @@ display: block;
 .image-slider__wrapper{
     @media(max-width: 767px){
      margin: 50px 0px 0px 0px;
-     
+    
      }
     
 }
 
 .image-slider__slide{
+   
 }
 
 .image-slider__image{
+    height: 160px;
 }
 
 .image-slider__image img{
