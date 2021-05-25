@@ -25,36 +25,100 @@ function togle2() {
 
 //==========================Форма================================
 
-document.querySelector('.button-sub').onclick = valid;
+// document.querySelector('.button-sub').onclick = valid;
+
+// function valid(form) {
+//     form = document.getElementById('formstart'); // указуем id формы
+
+//     let fail = false; // Переменная куда заносим ошибку, если она есть
+//     let name = form.name.value;
+//     let email = form.email.value;
+//     let phone = form.phone.value;
+//     let regMail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; //Регулярное выражение для проверки Email
+
+//     if (name == '' || name == ' ')
+//         fail = 'Enter your name';
+
+//     else if (regMail.test(email) == false)
+//         fail = 'Enter email'
+
+//     else if (phone == '')
+//         fail = 'Enter phone';
+
+//         if (fail)
+//         alert(fail); //Если переменная true выводим сообщение про ошибку.
 
 
-function valid(form) {
-    form = document.getElementById('formstart'); // указуем id формы
+//     else
+//         window.location = "http://google.com"; // Если все правильно, то перенаправляем пользователя на новую страницу
 
-    let fail = false; // Переменная куда заносим ошибку, если она есть
-    let name = form.name.value;
-    let email = form.email.value;
-    let phone = form.phone.value;
-    let regMail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; //Регулярное выражение для проверки Email
+// }
 
-    if (name == '' || name == ' ')
-        fail = 'Enter your name';
+document.addEventListener('DOMContentLoaded', function(){
+    const form = document.getElementById('formstart');
+    form.addEventListener('submit', formSend);
 
-    else if (regMail.test(email) == false)
-        fail = 'Enter email'
+    async function formSend(e){
+        e.preventDefault();
+        let error = formValidate(form);
+        let formData = new FormData(form);
+        // formData.append('image', formImage.files[0]);
 
-    else if (phone == '')
-        fail = 'Enter phone';
+        if(error === 0){
+            form.classList.add('_sending');
+           let response = await fetch('sendmail.php',{
+               method: 'POST',
+               body: formData
+           });
+           if(response.ok){
+              let result = await response.json();
+              alert(result.message);
+              form.reset();
+              form.classList.remove('_sending');
+           }else{
+             alert('Error');
+             form.classList.remove('_sending');
+           }
+        }else{
+            alert('Fill in required fields');
+        }
+    }
 
-        if (fail)
-        alert(fail); //Если переменная true выводим сообщение про ошибку.
-
-
-    else
-        window.location = "http://google.com"; // Если все правильно, то перенаправляем пользователя на новую страницу
-
+function formValidate(form){
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+    for(let i = 0; i < formReq.length; i++){
+        const input = formReq[i];
+       formRemoveError(input);
+       if(input.classList.contains('_email')){
+         if(emailTest(input)){
+             formAddError(input);
+             error++;
+         }
+       }else {
+           if (input.value === ''){
+            formAddError(input);
+            error++;
+           }
+       }
+    }
+    return error;
 }
 
+
+function formAddError(input){
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+}
+function formRemoveError(input){
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+}
+//Функция теста email
+function emailTest(input){
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
+});
 
 
 //=================================Слайдер=====================================
