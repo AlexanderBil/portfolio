@@ -1008,8 +1008,9 @@
   }
 }
 
-.image-slider__slide {
+.image-slider__image {
   height: 160px;
+  border: 1px solid #be1919;
 }
 
 .image-slider__image img {

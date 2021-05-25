@@ -808,11 +808,12 @@ display: block;
 }
 
 .image-slider__slide{
-    height: 160px;
+
 }
 
 .image-slider__image{
-
+    height: 160px;
+    border: 1px solid rgb(190, 25, 25);
 }
 
 .image-slider__image img{
